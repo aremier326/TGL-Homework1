@@ -10,7 +10,14 @@ namespace Homework1
         {
             try
             {
-                Console.WriteLine(Utils.GetFactorial(9));
+                Console.WriteLine("Factorial of 9: " + Utils.GetFactorial(9) + "\n\n");
+
+                Console.WriteLine("Fibonacci sequence length of 20: " + "\n");
+
+                foreach (var num in Utils.GetFibonacci(20))
+                {
+                    Console.WriteLine(num);
+                }
             }
             catch (ArgumentException e)
             {
